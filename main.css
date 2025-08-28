@@ -409,4 +409,7 @@ nav {
     .titulo h1 {
         font-size: 30px;
     }
+    .titulo {
+        text-align: center;
+    }
 }

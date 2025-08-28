@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+.risco {
+    border-bottom: 1px solid #fff;
+    border-color: rgb(255, 255, 255);
+    width: 80%;
+}
+
+header {
+    margin-bottom: 36px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    left: 20%;
+    width: 300px;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px grey;
+    z-index: 1;
+}
+
+.sub-menu li {
+    display: block;
+    padding: 8px;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 10px 16px; 
+    border-top: 4px solid transparent;
+    position: relative;
+}
+.menu a, .menu li {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.sub-menu a, .sub-menu li {
+    text-decoration: none;
+    color:rgb(3, 3, 3);
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+    animation: reverse;
+}
+
+.menu li:hover {
+    border-color: rgb(92, 230, 122);
+}
+
+.logo {
+    color: #fff;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+nav {
+    width: 60%;
+    margin-top: 15px;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CONTAINER-IMG1 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./imagens/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(
+    0 0,       /* left-top */
+    100% 0,    /* right-top */
+    100% 90%,  /* right-bottom subindo 20% */
+    30% 70%,   /* centro-bottom, altura maior (subindo mais) */
+    0 90%      /* left-bottom subindo 30% */
+  );
+}
+
+.titulo {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    position: absolute;
+    font-size: 4vw;
+    color: #fff;
+    top: 15%;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.risco-cima {
+    padding: 20px 0;
+    top: -50px;
+    position: relative;
+}
+
+.sobre {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    justify-content: center;
+}
+
+.sob img {
+    width: 150px;
+    height: 200px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.sob img:hover {
+    transform: scale(1.1);
+}
+
+.sobre h1 {
+    margin: 10px 0;
+}
+
+.trajeto-p p{
+    margin-top: 10px;
+}
+
+
+.trajeto {
+    max-width: 90%;
+}
+
+.grade {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.grade li {
+    min-height: 380px;
+    max-width: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    list-style: none;
+    padding: 5px;
+    border-radius: 2%;
+    transition: transform 0.1s ease;
+}
+.grade li:hover {
+    transform: scale(1.1);
+}
+
+.categorias h1 {
+    text-transform: uppercase;
+    color: #16604F;
+}
+
+.grade h2 {
+    font-size: 18px;
+}
+
+.grade p {
+    font-size: 14px;
+    margin-left: 5px;
+    height: 100%;
+    max-height: 90px;
+}
+
+.grade img {
+    max-width: 100%;
+    width: 100%;
+    height: 180px;
+}
+
+.grade button {
+    width: 100%;
+    height: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #44A18C;
+    border: none;
+    cursor: pointer;
+}
+
+.grade button:hover {
+    background-color: goldenrod;
+}
+
+.produtos {
+    width: 100%;
+    padding: 20px;
+}
+
+.produtos h1, .grade h2, .grade button  {
+    margin: 10px 0 5px 0;
+}
+
+.ver-mais {
+    margin: 10px 0px;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    border-top: 1px dotted #44A18C;
+    border-bottom: 1px dotted #44A18C;
+    display: block;
+}
+
+.ver-mais a {
+    text-decoration: none;
+    color: #44A18C;
+}
+
+.categorias {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.categorias ul {
+        justify-items: center;
+    }
+
+.clip {
+    background-color: #44A18C;
+    padding-top: 100px;
+    width: 100%;
+    min-height: 450px;
+    clip-path: polygon(44% 15%, 71% 2%, 100% 18%, 100% 100%, 0 100%, 0 20%, 19% 8%);
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.copy {
+    width: 100%;
+    background-color: #16604F;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.rodape {
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.rodape h1 {
+    margin-bottom: 10px;
+    transition: transform 2s ease;
+}
+
+.nome-empresa:hover {
+    transform: scale(1.02);
+    color: gold;
+}
+
+.rodape-flex li {
+    display: flex;
+    padding: 5px;
+}
+
+.rodape-flex img {
+    margin: 0 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.rodape-flex li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rodape-card li {
+    width: 130px;
+    cursor: pointer;
+}
+
+.rodape-card li:hover {
+    background-color: #DCB434;
+}
+
+.rodape-flex p:hover {
+    color: #DCB434;
+}
+
+
+
+/* RESPOSIVIDADE */
+
+@media screen and (max-width: 1023px) {
+    .sobre {
+        grid-template-columns: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sobre img {
+        margin-bottom: 30px;
+    }
+
+    .grade {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .grade li {
+        margin-bottom: 30px;
+    }
+    
+    .sub-menu {
+        max-width: 160%;
+    }
+
+    .sub-menu li {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grade {
+        grid-template-columns: 100%;
+    }
+
+    .grade li {
+        width: 60%;
+    }
+
+    .sobre img {
+        width: 130px;
+    }
+
+    .trajeto-p img {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .clip {
+        grid-template-columns: 100%;
+    }
+    
+    .nome-empresa {
+        margin-top: 50px;
+    }
+
+    .logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        font-size: 16px;
+    }
+
+    .container {
+        min-width: 100%;
+    }
+
+    .sub-menu  {
+        width: 120%;
+    }
+
+    .sub-menu li {
+        padding: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+}

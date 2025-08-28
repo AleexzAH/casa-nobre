@@ -361,15 +361,22 @@ nav {
 
 @media screen and (max-width: 640px) {
     .grade {
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(2, 50%);
     }
 
     .grade li {
-        width: 60%;
+        min-width: 100%;
     }
 
+    .grade button {
+        margin-top: 15px;
+    }
+    
+    .container, .produtos {
+        min-width: 100%;
+    }
     .sobre img {
-        width: 130px;
+        width: 110px;
     }
 
     .trajeto-p img {
@@ -394,8 +401,10 @@ nav {
     .menu {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 32%);
+        grid-template-columns: 100%;
         font-size: 16px;
+        justify-content: center;
+        justify-items: center;
     }
 
     .container {
@@ -403,11 +412,12 @@ nav {
     }
 
     .sub-menu  {
-        width: 120%;
+        width: 160%;
     }
 
     .sub-menu li {
         padding: 10px;
+        
     }
 
     .titulo h1 {

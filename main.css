@@ -353,6 +353,10 @@ nav {
     .sub-menu li {
         padding: 10px;
     }
+
+    .titulo {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 640px) {
